@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Parameter Example</title>
+</head>
+<body>
+
+<script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    var exampleValue = getParameterByName('example');
+
+    // Add a new parameter to the existing URL
+    var newParamValue = 'newValue';
+    var newUrl = window.location.href.split('?')[0] + '?newParam=' + encodeURIComponent(newParamValue);
+
+    console.log('Original URL:', window.location.href);
+    console.log('Value of "example" parameter:', exampleValue);
+    console.log('New URL with "newParam" parameter:', newUrl);
+</script>
+
+</body>
+</html>
