@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+fid<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,12 +18,12 @@
         return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
-    var exampleValue = getParameterByName('example');
-window.alert(exampleValue);
+    var ref_id = getParameterByName('refid');
+window.alert(ref_id);
     // Add a new parameter to the existing URL
-    var newParamValue = 'newValue';
-    var newUrl = window.location.href.split('?')[0] + '?newParam=' + encodeURIComponent(newParamValue);
-
+    //var newParamValue = 'newValue';
+    var newUrl = 'https://form.jotform.com/scubeideas/cust?typeA73={' + encodeURIComponent(ref_id) + '}';
+window.alert(newUrl);
     console.log('Original URL:', window.location.href);
     console.log('Value of "example" parameter:', exampleValue);
     console.log('New URL with "newParam" parameter:', newUrl);
