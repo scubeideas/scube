@@ -3,7 +3,8 @@ fid<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Parameter Example</title>
+    <title>Share Referral Link on WhatsApp</title>
+
 </head>
 <body>
 
@@ -20,19 +21,32 @@ fid<!DOCTYPE html>
 
     var ref_id = getParameterByName('refid');
 window.alert(ref_id);
-    // Add a new parameter to the existing URL
-    //var newParamValue = 'newValue';
-    var newUrl = 'https://form.jotform.com/scubeideas/cust?refCode=' + encodeURIComponent(ref_id);
-    
-    window.alert(newUrl);
+    var newUrl = 'https://scubeideas.github.io/scube/fwd.html?refid=' + encodeURIComponent(ref_id);
+    document.getELementById("ref_link").innerHTML = newUrl;
+window.alert(newUrl);
     
     function whatsapp(){
         window.open('whatsapp://send?text='+ newUrl);
     }
-    //console.log('Original URL:', window.location.href);
-    //console.log('Value of "example" parameter:', exampleValue);
-    //console.log('New URL with "newParam" parameter:', newUrl);
 </script>
-<button class = "Click to Share" onclick = "whatsapp()" > Share on Wp </button>
+
+<p style='margin:0cm;margin-bottom:.0001pt;font-size:15px;font-family:"Calibri","sans-serif";'><strong><span style="font-size:64px;color:#00B050;">C</span></strong><strong><span style="font-size:64px;color:red;">o</span></strong><strong><span style="font-size:64px;color:#00B050;">n</span></strong><strong><span style="font-size:64px;color:#002060;">g</span></strong><strong><span style="font-size:64px;color:#00B0F0;">r</span></strong><strong><span style="font-size:64px;color:#00B050;">a</span></strong><strong><span style="font-size:64px;color:red;">t</span></strong><strong><span style="font-size:64px;color:#F87306;">u</span></strong><strong><span style="font-size:64px;color:#00B0F0;">l</span></strong><strong><span style="font-size:64px;color:red;">a</span></strong><strong><span style="font-size:64px;color:#00B050;">t</span></strong><strong><span style="font-size:64px;color:red;">i</span></strong><strong><span style="font-size:64px;color:#00B0F0;">o</span></strong><strong><span style="font-size:64px;color:red;">n</span></strong><strong><span style="font-size:64px;color:#002060;">s</span></strong><strong><span style="font-size:64px;color:red;">!</span></strong></p>
+<p style='margin:0cm;margin-bottom:.0001pt;font-size:15px;font-family:"Calibri","sans-serif";'><span style='font-size:29px;font-family:"Calibri","sans-serif";color:#F87306;'>Your referral link is created. Please find it below</span></p>
+<p style='margin:0cm;margin-bottom:.0001pt;font-size:15px;font-family:"Calibri","sans-serif";'><br></p>
+<p style='margin:0cm;margin-bottom:.0001pt;font-size:15px;font-family:"Calibri","sans-serif";'><span id="ref_link"></span></p>
+<p style='margin:0cm;margin-bottom:.0001pt;font-size:15px;font-family:"Calibri","sans-serif";'><br></p>
+<p style='margin:0cm;margin-bottom:.0001pt;font-size:15px;font-family:"Calibri","sans-serif";'><strong><span style="font-size:19px;color:black;">-&gt;</span></strong><span style="font-size:19px;color:#00B050;">&nbsp; Tap on the&nbsp;</span><span style="font-size:19px;color:red;">Share Referral Link&nbsp;</span><span style="font-size:19px;color:#00B050;">button below, to open your WhatsApp</span></p>
+<p style='margin:0cm;margin-bottom:.0001pt;font-size:15px;font-family:"Calibri","sans-serif";'><strong><span style="font-size:19px;color:black;">-&gt;</span></strong><span style="font-size:19px;color:#00B050;">&nbsp; Select your&nbsp;</span><span style="font-size:19px;color:#002060;">Contacts/Groups &amp; &ldquo;My Status&rdquo;</span><span style="font-size:19px;color:#00B050;">&nbsp;and&nbsp;</span><span style="font-size:19px;color:#002060;">tap on the green arrow</span></p>
+<p><strong><span style='font-size:19px;font-family:"Calibri","sans-serif";color:black;'>-&gt;</span></strong><span style='font-size:19px;font-family:"Calibri","sans-serif";color:#00B050;'>&nbsp; Tap on the green arrow on next screen also to&nbsp;</span><span style='font-size:19px;font-family:"Calibri","sans-serif";color:#002060;'>publish your referral link</span><span style='font-size:19px;font-family:"Calibri","sans-serif";color:#00B050;'>&nbsp;to your selected contacts/groups/status&nbsp;</span><span style='font-size:19px;font-family:"Calibri","sans-serif";color:#002060;'>on your WhatsApp</span></p>
+<p><br></p>
+<p style='margin: 0cm 0cm 0.0001pt; font-size: 15px; font-family: Calibri, "sans-serif"; text-align: left;'><strong><span style="font-size:48px;color:#7030A0;">That&rsquo;s it!</span></strong></p>
+<p style='margin:0cm;margin-bottom:.0001pt;font-size:15px;font-family:"Calibri","sans-serif";'><span style="font-size:24px;color:#002060;">Whenever a user taps on the link shared by you and</span></p>
+<p style='margin:0cm;margin-bottom:.0001pt;font-size:15px;font-family:"Calibri","sans-serif";'><strong><span style="font-size:24px;color:#002060;">places an order</span></strong><span style="font-size:24px;color:#002060;">&nbsp;for Night Sense,&nbsp;</span></p>
+<p><span style='font-size:24px;font-family:"Calibri","sans-serif";color:red;'>you earn&nbsp;</span><span style='font-size:24px;font-family:"Calibri","sans-serif";color:#00B050;'>₹<strong>&nbsp;50</strong></span><span style='font-size:24px;font-family:"Calibri","sans-serif";color:#002060;'>&nbsp;for each order.</span></p>
+<p><br></p>
+<p><span style='font-size:24px;font-family:"Calibri","sans-serif";color:#002060;'><strong><span style="font-size:64px;color:#00B050;">Happy earning ...</span></strong></span></p>
+
+
+<button class = "btn" onclick = "whatsapp()" > Share Referral Link </button>
 </body>
 </html>
