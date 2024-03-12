@@ -45,8 +45,8 @@ fid<!DOCTYPE html>
 
     var ref_id = getParameterByName('refid');
 window.alert(ref_id);
-    var newUrl = 'https://scubeideas.github.io/scube/fwd.html?refid=' + encodeURIComponent(ref_id);
-    document.getELementById("ref_link").innerHTML = newUrl;
+    var newUrl = 'https://scubeideas.github.io/scube/fwd.html?refid=' + ref_id; encodeURIComponent(ref_id);
+    document.getElementById("ref_link").innerHTML = newUrl;
 window.alert(newUrl);
     
     function whatsapp(){
