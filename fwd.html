@@ -36,12 +36,12 @@
     }
 
     var ref_id = getParameterByName('refid');
-window.alert(ref_id);
+// window.alert(ref_id);
     // Add a new parameter to the existing URL
     //var newParamValue = 'newValue';
-    var newUrl = '//form.jotform.com/scubeideas/cust?&refCode=' + encodeURIComponent(ref_id)+"manisiri";
+    var newUrl = '//form.jotform.com/scubeideas/cust?&refCode=' + encodeURIComponent(ref_id);
     
-    window.alert(getURL());
+  //  window.alert(getURL());
     document.getElementById("JotFormIFrame-240157499226462").src = newUrl;
 
     function getURL() {
@@ -49,7 +49,7 @@ window.alert(ref_id);
     }
     </script>
     <script type="text/javascript">
-        window.alert(src);
+    //    window.alert(src);
     var ifr = document.getElementById("JotFormIFrame-240157499226462");
     if (ifr) {
       var src = ifr.src;
