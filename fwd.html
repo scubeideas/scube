@@ -29,6 +29,10 @@ window.alert(ref_id);
     var newUrl = '//form.jotform.com/scubeideas/cust?&refCode=' + encodeURIComponent(ref_id);
     
     window.alert(newUrl);
+    
+    function getURL() {
+        return newUrl;
+    }
 </script>
     <iframe
       id="JotFormIFrame-240157499226462"
@@ -37,13 +41,14 @@ window.alert(ref_id);
       allowtransparency="true"
       allowfullscreen="true"
       allow="geolocation; microphone; camera"
-      src=newUrl
+      src=getURL();
       frameborder="0"
       style="min-width:100%;max-width:100%;height:539px;border:none;"
       scrolling="no"
     >
     </iframe>
     <script type="text/javascript">
+        window.alert(src);
     var ifr = document.getElementById("JotFormIFrame-240157499226462");
     if (ifr) {
       var src = ifr.src;
